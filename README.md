@@ -1,4 +1,4 @@
-```markdown
+```
 # 🌸 Aliya Banu - Flutter Portfolio
 
 A personal portfolio website and mobile application built using **Flutter and Dart** as part of a hands-on Mobile Application Development workshop.
