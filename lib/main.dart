@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'drawer.dart';
 
 void main() {
   runApp(const MyPortfolio());
@@ -79,6 +80,15 @@ class _PortfolioHomeState extends State<PortfolioHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: cream,
+      
+      drawer: PortfolioDrawer(
+    onHome: () => scrollTo(homeKey),
+    onAbout: () => scrollTo(aboutKey),
+    onSkills: () => scrollTo(skillsKey),
+    onProjects: () => scrollTo(projectsKey),
+    onEducation: () => scrollTo(educationKey),
+    onContact: () => scrollTo(contactKey),
+  ),
 
       // ================= APP BAR =================
 
