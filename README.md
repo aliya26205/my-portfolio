@@ -1,3 +1,4 @@
+```markdown
 # 🌸 Aliya Banu - Flutter Portfolio
 
 A personal portfolio website and mobile application built using **Flutter and Dart** as part of a hands-on Mobile Application Development workshop.
@@ -79,10 +80,8 @@ my-portfolio/
 ├── test/
 ├── pubspec.yaml
 └── README.md
+```
 
-## 🚀 Running the Project Locally
-
-```markdown
 ## 🚀 Running the Project Locally
 
 ### 1. Clone the repository
@@ -175,5 +174,6 @@ https://github.com/aliya26205/my-portfolio
 https://aliya26205.github.io/my-portfolio/
 
 ---
-```
 
+⭐ If you like this project, feel free to explore the repository and connect with me!
+```
