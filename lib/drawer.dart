@@ -79,8 +79,6 @@ class PortfolioDrawer extends StatelessWidget {
             ),
           ),
 
-          // ================= NAVIGATION =================
-
           ListTile(
             leading: const Icon(Icons.home),
             title: const Text('Home'),
@@ -137,7 +135,6 @@ class PortfolioDrawer extends StatelessWidget {
 
           const Divider(),
 
-          // ================= SOCIAL LINKS =================
 
           const Padding(
             padding: EdgeInsets.symmetric(

@@ -44,7 +44,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
   static const Color peach = Color(0xFFFFD9B8);
   static const Color dark = Color(0xFF3D2925);
 
-  // ================= SECTION KEYS =================
+  
 
   final homeKey = GlobalKey();
   final aboutKey = GlobalKey();
@@ -53,7 +53,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
   final educationKey = GlobalKey();
   final contactKey = GlobalKey();
 
-  // ================= OPEN LINK =================
+ 
 
   Future<void> openLink(String url) async {
     final Uri uri = Uri.parse(url);
@@ -66,7 +66,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     }
   }
 
-  // ================= SCROLL =================
+  
 
   void scrollTo(GlobalKey key) {
     Scrollable.ensureVisible(
@@ -90,7 +90,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     onContact: () => scrollTo(contactKey),
   ),
 
-      // ================= APP BAR =================
+      
 
       appBar: AppBar(
         backgroundColor: cream,
@@ -125,15 +125,13 @@ class _PortfolioHomeState extends State<PortfolioHome> {
         ],
       ),
 
-      // ================= BODY =================
+    
 
       body: SingleChildScrollView(
         child: Column(
           children: [
 
-            // =========================================================
-            // HOME
-            // =========================================================
+          
 
             Container(
               key: homeKey,
@@ -257,9 +255,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
               ),
             ),
 
-            // =========================================================
-            // SKILLS
-            // =========================================================
+           
 
             Container(
               key: skillsKey,
@@ -301,9 +297,6 @@ class _PortfolioHomeState extends State<PortfolioHome> {
               ),
             ),
 
-            // =========================================================
-            // PROJECTS
-            // =========================================================
 
             Container(
               key: projectsKey,
@@ -389,9 +382,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
               ),
             ),
 
-            // =========================================================
-            // EDUCATION
-            // =========================================================
+           
 
             Container(
               key: educationKey,
@@ -431,9 +422,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
               ),
             ),
 
-            // =========================================================
-            // CONTACT
-            // =========================================================
+            
 
             Container(
               key: contactKey,
@@ -514,9 +503,6 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // HOME TEXT
-  // =========================================================
 
   Widget homeText() {
       return Padding(
@@ -609,9 +595,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // PROFILE SHAPE
-  // =========================================================
+
 
   Widget profileShape({
     required double height,
@@ -626,13 +610,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
         borderRadius: BorderRadius.circular(180),
       ),
 
-      // child: const Center(
-      //   child: Icon(
-      //     Icons.person,
-      //     size: 150,
-      //     color: Colors.white,
-      //   ),
-      // ),
+   
       child: ClipRRect(
   borderRadius: BorderRadius.circular(180),
   child: Image.asset(
@@ -645,9 +623,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // NAVIGATION BUTTON
-  // =========================================================
+
 
   Widget navButton(String title, GlobalKey key) {
     return TextButton(
@@ -665,9 +641,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // SECTION TITLE
-  // =========================================================
+
 
   Widget sectionTitle(String title) {
     return Text(
@@ -680,9 +654,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // INFO BADGE
-  // =========================================================
+
 
   Widget infoBadge(
     IconData icon,
@@ -723,9 +695,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // TECHNOLOGY CARD
-  // =========================================================
+
 
   Widget techCard(
     String name,
@@ -785,9 +755,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // PROJECT CARD
-  // =========================================================
+
 
   Widget projectCard(
     String title,
@@ -886,9 +854,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // EDUCATION CARD
-  // =========================================================
+  
 
   Widget educationCard(
     String degree,
@@ -989,9 +955,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 
-  // =========================================================
-  // SOCIAL BUTTON
-  // =========================================================
+
 
   Widget socialButton(
     String name,
