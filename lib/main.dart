@@ -277,8 +277,6 @@ class _PortfolioHomeState extends State<PortfolioHome> {
 
                       techCard('Java', 'JAVA'),
                       techCard('Python', 'PY'),
-                      techCard('Flutter', 'FL'),
-                      techCard('Dart', 'D'),
                       techCard('HTML', 'HTML'),
                       techCard('CSS', 'CSS'),
                       techCard('JavaScript', 'JS'),
@@ -511,8 +509,13 @@ class _PortfolioHomeState extends State<PortfolioHome> {
   // =========================================================
 
   Widget homeText() {
-    return Padding(
-      padding: const EdgeInsets.all(25),
+      return Padding(
+  padding: const EdgeInsets.only(
+    left: 60,
+    right: 25,
+    top: 25,
+    bottom: 25,
+  ),
 
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -531,22 +534,13 @@ class _PortfolioHomeState extends State<PortfolioHome> {
           const SizedBox(height: 5),
 
           const Text(
-            'ALIYA',
-            style: TextStyle(
-              color: orange,
-              fontSize: 60,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-
-          const Text(
-            'BANU',
-            style: TextStyle(
-              color: orange,
-              fontSize: 60,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+  'ALIYA BANU',
+  style: TextStyle(
+    color: orange,
+    fontSize: 55,
+    fontWeight: FontWeight.bold,
+  ),
+),
 
           const SizedBox(height: 10),
 
@@ -622,13 +616,22 @@ class _PortfolioHomeState extends State<PortfolioHome> {
         borderRadius: BorderRadius.circular(180),
       ),
 
-      child: const Center(
-        child: Icon(
-          Icons.person,
-          size: 150,
-          color: Colors.white,
-        ),
-      ),
+      // child: const Center(
+      //   child: Icon(
+      //     Icons.person,
+      //     size: 150,
+      //     color: Colors.white,
+      //   ),
+      // ),
+      child: ClipRRect(
+  borderRadius: BorderRadius.circular(180),
+  child: Image.asset(
+    'assets/aliya.jpeg',
+    height: height,
+    width: width,
+    fit: BoxFit.cover,
+  ),
+),
     );
   }
 
