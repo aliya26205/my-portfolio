@@ -175,8 +175,5 @@ https://github.com/aliya26205/my-portfolio
 https://aliya26205.github.io/my-portfolio/
 
 ---
-
-⭐ If you like this project, feel free to explore the repository and connect with me!
 ```
 
-**Important:** Paste this inside `README.md`, not inside `main.dart`. The triple backticks around the commands are what make GitHub display them as proper code blocks.
